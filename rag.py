@@ -6,6 +6,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough, RunnableLambda
 from langchain_core.output_parsers import StrOutputParser
 import openai
+import streamlit as st
 import numpy as np
 
 api_key = st.secrets["OPENAI_API_KEY"]
