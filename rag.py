@@ -5,10 +5,11 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough, RunnableLambda
 from langchain_core.output_parsers import StrOutputParser
+import openai
 import numpy as np
-import dotenv
 
-dotenv.load_dotenv()
+api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = api_key
 
 try:
   loader = CSVLoader('context/GPT_Input_DB_clean.csv')
