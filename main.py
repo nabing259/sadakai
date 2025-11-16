@@ -113,7 +113,7 @@ if st.button("🔍 Analyze with SadakAI"):
 
         # RETRIEVED CONTEXT
 
-        with st.expander("📂 Show Retrieved Knowledge Chunks (IRC/WHO)"):
+        with st.expander("📂 Show Retrieved Knowledge Chunks (IRC)"):
             docs = retriever.invoke(user_query)
             for i, d in enumerate(docs, 1):
                 st.markdown(f"### Document {i}")
