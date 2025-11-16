@@ -13,7 +13,7 @@ api_key = st.secrets["OPENAI_API_KEY"]
 openai.api_key = api_key
 
 try:
-  loader = CSVLoader('https://raw.githubusercontent.com/nabing259/sadakai/refs/heads/main/context/GPT_Input_DB_clean.csv')
+  loader = CSVLoader('context/GPT_Input_DB_clean.csv')
   docs = loader.load()
 except Exception as e:
   print(f'Error: {e}')
