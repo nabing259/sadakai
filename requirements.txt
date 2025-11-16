@@ -1,0 +1,17 @@
+# LangChain
+langchain
+langchain-core
+langchain-community
+langchain_text_splitters
+faiss-cpu
+tiktoken
+
+# OpenAI Integration
+langchain-openai
+openai
+
+# Environment Variable Management
+python-dotenv
+
+# Streamlit
+streamlit
